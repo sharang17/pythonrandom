@@ -83,3 +83,26 @@ def uses_only(word,uses):
         return false
 
 def uses_all(word,uses):
+    sorted_word=''.join(sorted(word))
+    sorted_uses=''.join(sorted(uses))
+    if sorted_uses in sorted_word:
+        return "True"
+    else:
+        return "False"
+
+def check_vowels(wordlist):
+    vowels="aeiouy"
+    vow=[]
+    for word in worldlist:
+        if vowels in word:
+            vow.append(word)
+        else:
+            continue
+    return vow
+
+def is_abecedarian(word):
+    for i in range(0,len(word)):
+        if letter[i] < letter[i+1]:
+            continue
+        else:
+            print "false"
